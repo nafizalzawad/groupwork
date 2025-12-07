@@ -75,3 +75,14 @@ const formattedDate = today.toLocaleDateString('en-GB', {
   year: 'numeric'
 });
 console.log(`\nToday is: ${formattedDate}`);
+
+
+const scoreMap = new Map();
+scoreMap.set('Nafiz', totalBugs(Nafiz));
+scoreMap.set('Millat', totalBugs(Millat));
+scoreMap.set('Touheul', totalBugs(Touheul));
+
+console.log('\n📊 Bug Scoreboard:');
+for (let [name, score] of scoreMap) {
+  console.log(`${name} → ${score} bugs`);
+}
