@@ -32,3 +32,16 @@ const Touhedul = {
   bugs: ['UI Bug', 'API Bug', 'Logic Bug', 'DB Bug', 'Crash Bug', 'Auth Bug'],
   bugCount: 6
 };
+
+function calculateGrade(bugCount) {
+  if (bugCount > 5) {
+    return '⭐ Bug Star';
+  } else if (bugCount >= 3) {
+    return '✅ Active Hunter';
+  } else {
+    return '🔍 Needs Improvement';
+  }
+}
+
+// Arrow function → bug array length return
+const totalBugs = (user) => user.bugs.length;
