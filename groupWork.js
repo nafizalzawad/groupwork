@@ -1,7 +1,7 @@
-// টিম মেম্বারদের নামের অ্যারে
+// For Team member
 const teamMembers = ['Nafiz', 'Millat', 'Touheul'];
 
-// স্কোর ভেরিয়েবল
+// Score Variable
 let NafizScore = 0;
 let MillatScore = 0;
 let TouhedulScore = 0;
