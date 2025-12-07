@@ -66,3 +66,12 @@ Nafiz.bugs.push('Navbar Bug');
 
 // একটা bug fix হয়ে গেছে, pop দিয়ে সরালাম Meem-এর bug list থেকে
 Millat.bugs.pop();
+
+
+const today = new Date();
+const formattedDate = today.toLocaleDateString('en-GB', {
+  day: '2-digit',
+  month: 'long',
+  year: 'numeric'
+});
+console.log(`\nToday is: ${formattedDate}`);
