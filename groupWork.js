@@ -45,3 +45,18 @@ function calculateGrade(bugCount) {
 
 // Arrow function → bug array length return
 const totalBugs = (user) => user.bugs.length;
+
+
+const users = ['Nafiz', 'Millat', 'Touheul'];
+for (const user of users) {
+  console.log(`\n👤 Name: ${user.name} (Age: ${user.age})`);
+
+  // for...of loop → bugs দেখানো
+  console.log(`📌 Bugs Found: ${user.bugs.join(', ')}`);
+
+  // bugCount update
+  user.bugCount = totalBugs(user);
+
+  // Grade দেখানো
+  console.log(`🎯 Grade: ${calculateGrade(user.bugCount)}`);
+}
