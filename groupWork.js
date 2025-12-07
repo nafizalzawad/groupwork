@@ -47,7 +47,7 @@ function calculateGrade(bugCount) {
 const totalBugs = (user) => user.bugs.length;
 
 
-const users = ['Nafiz', 'Millat', 'Touheul'];
+const users = [Nafiz, Millat, Touhedul];
 for (const user of users) {
   console.log(`\n👤 Name: ${user.name} (Age: ${user.age})`);
 
@@ -80,7 +80,7 @@ console.log(`\nToday is: ${formattedDate}`);
 const scoreMap = new Map();
 scoreMap.set('Nafiz', totalBugs(Nafiz));
 scoreMap.set('Millat', totalBugs(Millat));
-scoreMap.set('Touheul', totalBugs(Touheul));
+scoreMap.set('Touheul', totalBugs(Touhedul));
 
 console.log('\n📊 Bug Scoreboard:');
 for (let [name, score] of scoreMap) {
